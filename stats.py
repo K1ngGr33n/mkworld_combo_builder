@@ -10,6 +10,7 @@ vStats = []
 tStats = []
 tNames = ["", ""]
 
+# stat/coin curve CSVs
 csvCharStats = pd.read_csv("csv/charStats.csv")
 csvVehStats = pd.read_csv("csv/vehStats.csv")
 csvCoinCurve = pd.read_csv("csv/coinCurve.csv")
@@ -21,7 +22,7 @@ testInputCombos = [["mario", "blooper"]]
 
 def viewStats(combos: str):
     """
-    Show/Compare the stats of (up to) 10 combos.
+    Get the stats of (up to) 10 combos.
 
     Parameters
     ----------
