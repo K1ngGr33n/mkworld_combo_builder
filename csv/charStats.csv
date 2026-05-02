@@ -1,0 +1,71 @@
+Name,Short,RS,TS,WS,AC,MT,WE,CC,RH,TH,WH
+,,,,,,,,,,,
+Baby Peach,bpeach,0,0,0,7,4,0,9,6,6,6
+Baby Daisy,bdaisy,0,0,0,7,4,0,9,6,6,6
+Para-Biddybud,biddy,0,0,0,7,4,0,9,6,6,6
+Swooper,swoop,0,0,0,7,4,0,9,6,6,6
+,,,,,,,,,,,
+Baby Mario,bmario,1,0,0,6,3,1,8,7,5,5
+Goomba,goomba,1,0,0,6,3,1,8,7,5,5
+Spike,spike,1,0,0,6,3,1,8,7,5,5
+,,,,,,,,,,,
+Baby Luigi,bluigi,0,1,0,6,3,1,8,5,7,5
+Dry Bones,dbones,0,1,0,6,3,1,8,5,7,5
+Peepa,peepa,0,1,0,6,3,1,8,5,7,5
+,,,,,,,,,,,
+Baby Rosalina,brosa,0,0,1,6,3,1,8,5,5,7
+Sidestepper,sstepper,0,0,1,6,3,1,8,5,5,7
+Fishbone,fbone,0,0,1,6,3,1,8,5,5,7
+,,,,,,,,,,,
+Toadette,toadette,2,1,1,5,3,2,7,6,4,4
+Nabbit,nabbit,2,1,1,5,3,2,7,6,4,4
+,,,,,,,,,,,
+Toad,toad,1,2,1,5,3,2,7,4,6,4
+Shy Guy,shyguy,1,2,1,5,3,2,7,4,6,4
+Stingby,stingby,1,2,1,5,3,2,7,4,6,4
+,,,,,,,,,,,
+Koopa Troopa,koopa,1,1,2,5,3,2,7,4,4,6
+Lakitu,lakitu,1,1,2,5,3,2,7,4,4,6
+Cheep Cheep,cheepcheep,1,1,2,5,3,2,7,4,4,6
+,,,,,,,,,,,
+Daisy,daisy,3,2,2,4,2,3,5,5,3,3
+Peach,peach,3,2,2,4,2,3,5,5,3,3
+Coin Coffer,coffer,3,2,2,4,2,3,5,5,3,3
+,,,,,,,,,,,
+Yoshi,yoshi,2,3,2,4,2,3,5,3,5,3
+Monty Mole,mmole,2,3,2,4,2,3,5,3,5,3
+,,,,,,,,,,,
+Bowser Jr.,bowserjr,2,2,3,4,2,3,5,3,3,5
+Dolphin,dolphin,2,2,3,4,2,3,5,3,3,5
+,,,,,,,,,,,
+Mario,mario,4,3,3,3,1,4,4,4,2,2
+Rocky Wrench,rocky,4,3,3,3,1,4,4,4,2,2
+,,,,,,,,,,,
+Luigi,luigi,3,4,3,3,1,4,4,2,4,2
+Hammer Bro,hbro,3,4,3,3,1,4,4,2,4,2
+Pokey,pokey,3,4,3,3,1,4,4,2,4,2
+,,,,,,,,,,,
+Birdo,birdo,3,3,4,3,1,4,4,2,2,4
+Penguin,penguin,3,3,4,3,1,4,4,2,2,4
+,,,,,,,,,,,
+Pauline,pauline,5,4,4,2,0,5,2,3,1,1
+Snowman,snowman,5,4,4,2,0,5,2,3,1,1
+Piranha Plant,pplant,5,4,4,2,0,5,2,3,1,1
+,,,,,,,,,,,
+King Boo,kboo,4,5,4,2,0,5,2,1,3,1
+Conkdor,conkdor,4,5,4,2,0,5,2,1,3,1
+,,,,,,,,,,,
+Rosalina,rosa,4,4,5,2,0,5,2,1,1,3
+Cataquack,cataquack,4,4,5,2,0,5,2,1,1,3
+,,,,,,,,,,,
+Wario,wario,6,5,5,1,0,6,1,2,0,0
+Wiggler,wiggler,6,5,5,1,0,6,1,2,0,0
+,,,,,,,,,,,
+Donkey Kong,dk,5,6,5,1,0,6,1,0,2,0
+Chargin' Chuck,chuck,5,6,5,1,0,6,1,0,2,0
+Cow,cow,5,6,5,1,0,6,1,0,2,0
+,,,,,,,,,,,
+Waluigi,waluigi,5,5,6,1,0,6,1,0,0,2
+Pianta,pianta,5,5,6,1,0,6,1,0,0,2
+,,,,,,,,,,,
+Bowser,bowser,6,6,6,0,0,7,0,0,0,0
