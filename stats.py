@@ -2,28 +2,20 @@ import numpy as np
 import pandas as pd
 import re
 
+# character/vehicle stats
 cStats = []
 vStats = []
 
+# end stats/names
 tStats = []
 tNames = ["", ""]
-
-statsOut = []
-namesOut = []
-
-cCurveOut = []
-
-nameAndStats = [["", ""], [0 for _ in range(10)]]
-finalOutput = []
-
-cCount = 0
-
-testInputCombos = [["mario", "blooper"]]
-testInputCoin = [9]
 
 csvCharStats = pd.read_csv("csv/charStats.csv")
 csvVehStats = pd.read_csv("csv/vehStats.csv")
 csvCoinCurve = pd.read_csv("csv/coinCurve.csv")
+
+# test stuff
+testInputCombos = [["mario", "blooper"]]
 
 # the rest
 
@@ -118,6 +110,3 @@ def getNamesAndStats(combos):
         # [combo][names/stats/coin curve][values]
     
     return returnVal
-
-# getNamesAndStats(testInput)
-# getCoinCurve(testInputCoin)
