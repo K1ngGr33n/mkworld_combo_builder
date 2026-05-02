@@ -1,65 +1,65 @@
-Name,Short,RS,TS,WS,AC,MT,WE,CC,RH,TH,WH
+Name,Short,RS,TS,WS,AC,MT,WE,CC,IV,RH,TH,WH
 ,,,,,,,,,,,
-Standard Bike,sbike,1,1,1,9,9,0,6,8,8,8
-Tune Thumper,tthumper,1,1,1,9,9,0,6,8,8,8
-Cute Scoot,cscoot,1,1,1,9,9,0,6,8,8,8
+Standard Bike,sbike,1,1,1,9,9,0,6,0,8,8,8
+Tune Thumper,tthumper,1,1,1,9,9,0,6,0,8,8,8
+Cute Scoot,cscoot,1,1,1,9,9,0,6,0,8,8,8
 ,,,,,,,,,,,
-Pipe Frame,pframe,2,2,2,8,8,1,5,7,7,7
+Pipe Frame,pframe,2,2,2,8,8,1,5,1,7,7,7
 ,,,,,,,,,,,
-Loco Moto,lmoto,4,4,4,6,6,1,5,7,7,7
+Loco Moto,lmoto,4,4,4,6,6,1,5,2,7,7,7
 ,,,,,,,,,,,
-Standard Kart,skart,5,5,5,5,5,2,4,6,6,6
-Plushbuggy,pbuggy,5,5,5,5,5,2,4,6,6,6
+Standard Kart,skart,5,5,5,5,5,2,4,3,6,6,6
+Plushbuggy,pbuggy,5,5,5,5,5,2,4,3,6,6,6
 ,,,,,,,,,,,
-Blastronaut III,blastronaut,5,5,5,6,6,3,3,4,4,4
+Blastronaut III,blastronaut,5,5,5,6,6,3,3,3,4,4,4
 ,,,,,,,,,,,
-W-Twin Chopper,wtwin,7,7,7,3,3,2,4,6,6,6
+W-Twin Chopper,wtwin,7,7,7,3,3,2,4,4,6,6,6
 ,,,,,,,,,,,
-Reel Racer,reel,8,8,8,2,2,3,3,5,5,5
+Reel Racer,reel,8,8,8,2,2,3,3,5,5,5,5
 ,,,,,,,,,,,
-Junkyard Hog,junkyard,8,8,8,3,3,4,2,3,3,3
+Junkyard Hog,junkyard,8,8,8,3,3,4,2,5,3,3,3
 ,,,,,,,,,,,
-Dread Sled,dsled,3,9,5,3,3,3,3,4,10,5
+Dread Sled,dsled,3,9,5,3,3,3,3,5,4,10,5
 ,,,,,,,,,,,
-Stellar Sled,ssled,6,8,11,0,0,5,1,2,3,9
+Stellar Sled,ssled,6,8,11,0,0,5,1,8,2,3,9
 ,,,,,,,,,,,
-Mach Rocket,mach,6,1,1,7,7,0,6,11,7,7
-R.O.B. H.O.G.,rob,6,1,1,7,7,0,6,11,7,7
+Mach Rocket,mach,6,1,1,7,7,0,6,0,11,7,7
+R.O.B. H.O.G.,rob,6,1,1,7,7,0,6,0,11,7,7
 ,,,,,,,,,,,
-Baby Blooper,blooper,7,2,2,6,6,1,5,10,6,6
+Baby Blooper,blooper,7,2,2,6,6,1,5,1,10,6,6
 ,,,,,,,,,,,
-Roadster Royale,roadster,8,4,4,4,4,3,3,9,4,4
-B-Dasher,bdasher,8,4,4,4,4,3,3,9,4,4
-Hot Rod,hotrod,8,4,4,4,4,3,3,9,4,4
-Bumble V,bumbleV,8,4,4,4,4,3,3,9,4,4
+Roadster Royale,roadster,8,4,4,4,4,3,3,4,9,4,4
+B-Dasher,bdasher,8,4,4,4,4,3,3,4,9,4,4
+Hot Rod,hotrod,8,4,4,4,4,3,3,4,9,4,4
+Bumble V,bumbleV,8,4,4,4,4,3,3,4,9,4,4
 ,,,,,,,,,,,
-Billdozer,bill,9,6,6,2,2,5,1,8,2,2
-Big Horn,bhorn,9,6,6,2,2,5,1,8,2,2
+Billdozer,bill,9,6,6,2,2,5,1,7,8,2,2
+Big Horn,bhorn,9,6,6,2,2,5,1,7,8,2,2
 ,,,,,,,,,,,
-Rallygator,rgator,9,6,6,3,3,6,0,6,0,0
+Rallygator,rgator,9,6,6,3,3,6,0,7,6,0,0
 ,,,,,,,,,,,
-Rally Bike,rbike,0,5,0,8,8,0,6,7,11,7
-Hyper Pipe,hpipe,0,5,0,8,8,0,6,7,11,7
+Rally Bike,rbike,0,5,0,8,8,0,6,1,7,11,7
+Hyper Pipe,hpipe,0,5,0,8,8,0,6,1,7,11,7
 ,,,,,,,,,,,
-Biddybuggy,bbuggy,1,6,1,7,7,1,5,6,10,6
+Biddybuggy,bbuggy,1,6,1,7,7,1,5,2,6,10,6
 ,,,,,,,,,,,
-Rally Kart,rkart,4,8,4,4,4,3,3,4,9,4
-Zoom Buggy,zbuggy,4,8,4,4,4,3,3,4,9,4
+Rally Kart,rkart,4,8,4,4,4,3,3,5,4,9,4
+Zoom Buggy,zbuggy,4,8,4,4,4,3,3,5,4,9,4
 ,,,,,,,,,,,
-Bowser Bruiser,bbruiser,7,10,7,1,1,5,1,2,8,2
-Li'l Dumpy,ldumpy,7,10,7,1,1,5,1,2,8,2
-Chargin' Truck,ctruck,7,10,7,1,1,5,1,2,8,2
-Tiny Titan,titan,7,10,7,1,1,5,1,2,8,2
+Bowser Bruiser,bbruiser,7,10,7,1,1,5,1,8,2,8,2
+Li'l Dumpy,ldumpy,7,10,7,1,1,5,1,8,2,8,2
+Chargin' Truck,ctruck,7,10,7,1,1,5,1,8,2,8,2
+Tiny Titan,titan,7,10,7,1,1,5,1,8,2,8,2
 ,,,,,,,,,,,
-Dolphin Dasher,ddasher,0,0,5,8,8,0,6,7,7,11
-Fin Twin,ftwin,0,0,5,8,8,0,6,7,7,11
+Dolphin Dasher,ddasher,0,0,5,8,8,0,6,1,7,7,11
+Fin Twin,ftwin,0,0,5,8,8,0,6,1,7,7,11
 ,,,,,,,,,,,
-Cloud 9,cloud9,4,4,8,4,4,3,3,4,4,9
-Ribbit Revster,rrevster,4,4,8,4,4,3,3,4,4,9
-Carpet Flyer,cflyer,4,4,8,4,4,3,3,4,4,9
+Cloud 9,cloud9,4,4,8,4,4,3,3,5,4,4,9
+Ribbit Revster,rrevster,4,4,8,4,4,3,3,5,4,4,9
+Carpet Flyer,cflyer,4,4,8,4,4,3,3,5,4,4,9
 ,,,,,,,,,,,
-Funky Dorrie,fdorrie,4,4,8,5,5,4,2,2,2,7
+Funky Dorrie,fdorrie,4,4,8,5,5,4,2,5,2,2,7
 ,,,,,,,,,,,
-Mecha Trike,mtrike,7,7,10,1,1,5,1,2,2,8
+Mecha Trike,mtrike,7,7,10,1,1,5,1,8,2,2,8
 ,,,,,,,,,,,
-Lobster Roller,lroller,7,7,10,2,2,6,0,0,0,6
+Lobster Roller,lroller,7,7,10,2,2,6,0,8,0,0,6

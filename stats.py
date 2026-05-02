@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
-
-cInput = []
+import re
 
 cStats = []
 vStats = []
@@ -25,14 +24,56 @@ testInputCoin = [9]
 csvCharStats = pd.read_csv("csv/charStats.csv")
 csvVehStats = pd.read_csv("csv/vehStats.csv")
 csvCoinCurve = pd.read_csv("csv/coinCurve.csv")
+
 # the rest
 
-def getValues(combos):
-    returnVal = [[["", ""], [0 for _ in range(10)]] for _ in range(len(combos))] # [[["h", "h"], [0, 0, 0, ...]], ...]
+def viewStats(combos: str):
+    """
+    Show/Compare the stats of (up to) 10 combos.
 
-    # try:
+    Parameters
+    ----------
+    combos: str
+        Comma separated combos
+    """
+    fullStats = []
+
+    # get all combos
+    inputList = re.split(",+", combos)
+    if len(inputList) > 10: # more than 10 combos
+        raise OverflowError(f"Too many combos! (received {len(inputList)} combos, only 10 allowed)")
+    elif len(inputList) == 0:
+        raise IndexError("Please input a combo to show stats!")
+
+    # create list of short names: [["c", "v"], ...]
+    for i in range(len(inputList)):
+        inputList[i] = str(inputList[i]).strip().lower()
+
+    # process inputs into correct format: [["c", "v"], [0, 0, 0], [1, 2, 3], ...]
+    processedList = inputList
+    incorrectCombos = ""
+
+    for i in range(len(inputList)):
+        if len(re.findall("\\s+", inputList[i])) != 1: # bad syntax
+            incorrectCombos = incorrectCombos + ", " if incorrectCombos != "" else "" + str(i+1)
+            raise SyntaxError(f"Bad input! (incorrect syntax in these combos: {incorrectCombos})")
+        processedList[i] = re.split("\\s+", inputList[i]) # split character/vehicle
+    
+    # get and assign values
+    try:
+        fullStats = getNamesAndStats(processedList) # assign values
+    except ValueError as e:
+        raise ValueError(f"Bad input! ({e})")
+    
+    return fullStats
+
+def getNamesAndStats(combos):
+    returnVal = [[["", ""], [0 for _ in range(10)], [0.0 for _ in range(21)]] for _ in range(len(combos))] # [[["char", "veh"], [stats], [coin curve]], ...]
+
     for i in range(len(combos)):
+        # 
         # character
+        #
         row = csvCharStats.index[csvCharStats["Short"] == combos[i][0]].tolist() # find row index
         
         # not found
@@ -45,7 +86,9 @@ def getValues(combos):
         for k in range(len(result)-2):
             cStats[k] = int(result[k+2])
         
+        #
         # vehicle 
+        #
         row = csvVehStats.index[csvVehStats["Short"] == combos[i][1]].tolist() # find row index
         
         # not found
@@ -60,40 +103,21 @@ def getValues(combos):
         
         tStats = np.add(cStats, vStats).tolist() # total stats
 
-        # [[["h", "h"], [1, 1, 1]], ...]
-        # [combo][names/stats][values]
-        print(returnVal)
         returnVal[i][0] = [tNames[0], tNames[1]]
         returnVal[i][1] = tStats
-        print(returnVal)
+
+        #
+        # coins
+        #
+        for i in range(len(returnVal)):
+            result = csvCoinCurve.iloc[returnVal[i][1][6]].tolist() # get row values
+            for k in range(len(result)-1):
+                returnVal[i][2][k] = float(result[k+1])
+
+        # [[["h", "h"], [1, 1, 1...], [1, 2, 3...]], ...]
+        # [combo][names/stats/coin curve][values]
     
     return returnVal
-    # except Exception:
-    #     raise ValueError()
-
-def getCoinCurve(statList):
-    cCurveOut = [[0.0 for _ in range(21)] for _ in range(len(statList))]
-
-    for i in range(len(statList)):
-        result = csvCoinCurve.iloc[statList[i]].tolist() # get row values
-        for k in range(len(result)-1):
-            cCurveOut[i][k] = float(result[k+1])
-    
-    return cCurveOut
-
-def getNamesAndStats(combos):
-    cCount = len(combos)
-    cInput = combos
-    finalOutput = [[["", ""], [0 for _ in range(10)]] for _ in range(cCount)]
-
-    namesOut = [["", ""] for _ in range(cCount)] # [["", ""], ["", ""], ...]
-    statsOut = [[0] for _ in range(10) for _ in range(cCount)] # [[0, 0, ...], [0, 0, ...]]
-
-    # assign and return names and stats: [[["h", "h"], [1, 1, 1]], ...]
-    # get and assign stats
-    # [combo][names/stats][values]
-    
-    return getValues(combos)
 
 # getNamesAndStats(testInput)
 # getCoinCurve(testInputCoin)
